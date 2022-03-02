@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wnon-virtual-dtor")
 
 add_executable(test_aubo_sdk main.cpp)
+target_include_directories(test_aubo_sdk PUBLIC ./usr/include)
+target_link_directories(test_aubo_sdk PUBLIC ./usr/lib)
 target_link_libraries(test_aubo_sdk aubo_sdk)

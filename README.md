@@ -1,2 +1,5 @@
 # how to build
-`docker build -f Dockerfile .`
+mkdir build
+cd build
+cmake ..
+make
